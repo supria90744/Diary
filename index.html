@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIARY</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="navbar">
+        <h1>DIARY</h1>
+
+    </div>
+    <div class="container">
+        <div class="notescontainer">
+            <h2>DAY1</h2>
+            <h5>Best day</h5>
+            <p>Pleasant day in my life where each moment was unexpected that made me so happy
+            </p>
+            <button onclick="delenotes(event)">Delete</button>
+        </div>
+    </div>
+    <div class="over"></div>
+    <div class="popupbox">
+        <h2>ADD NOTES</h2>
+        <form>
+            <input type="text" placeholder="TITLE" id="title">
+            <input type="text" placeholder="DAY" id="days">
+            <textarea placeholder="Enter your thoughts" id="thoughts"></textarea>
+            <button id="type">ADD</button>
+            <button id="cancel">DELETE</button>
+
+        </form>
+
+    </div>
+    <button class="add" id="addpop">+</button>
+    <script src="app.js"></script>
+</body>
+</html>
